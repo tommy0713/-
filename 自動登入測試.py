@@ -38,8 +38,8 @@ driver.implicitly_wait(20)
 
 while True:
     try:
-        driver.find_element(By.NAME,"email").send_keys('tommy40114@gmail.com')
-        driver.find_element(By.NAME,"password").send_keys('19950713')
+        driver.find_element(By.NAME,"email").send_keys('帳號')
+        driver.find_element(By.NAME,"password").send_keys('密碼')
         driver.find_element(By.CSS_SELECTOR,'input[type="submit"]').click()
         break
     except WebDriverException:
